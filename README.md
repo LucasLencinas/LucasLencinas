@@ -14,4 +14,5 @@ Personal Web Page and Portfolio
  - Google Maps API (coming soon)
  - jQueryUI (coming soon)
  - Github Pages
+ - Multilanguage Page (comming soon)
 
