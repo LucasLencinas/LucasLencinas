@@ -81,7 +81,7 @@ footer.page-footer {
 }
 .custom-center li {
   display: flex;
-  margin: 0.5rem auto;
+  margin: 0.25rem auto;
 }
 
 .custom-center a {
@@ -112,6 +112,10 @@ footer.page-footer {
   margin: auto 0;
 }
 
+.card {
+  border-radius: 10px;
+}
+
 @media only screen and (min-width : 601px) {
   .card {
     height: 15rem;
@@ -120,4 +124,8 @@ footer.page-footer {
   .card-content {
     height: 100%;
   }
+}
+
+.black-shadow {
+  text-shadow: 1px 1px #000000;
 }
