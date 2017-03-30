@@ -129,3 +129,7 @@ footer.page-footer {
 .black-shadow {
   text-shadow: 1px 1px #000000;
 }
+
+h2 a:hover {
+  color: #26a69a;
+}
