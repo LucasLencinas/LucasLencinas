@@ -22,6 +22,7 @@ const meta = {
     },
     property: {
       'og:title': 'Lucas Lencinas',
+      'og:site_name': 'Lucas Lencinas',
       'og:type': 'website',
       'og:image': 'http://lucaslencinas.github.io/diploma.jpg',
       'og:image:secure_url': 'https://lucaslencinas.github.io/diploma.jpg',
