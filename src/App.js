@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import DocumentMeta from 'react-document-meta';
 import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -10,51 +11,63 @@ import Articles from './components/Articles';
 import Talks from './components/Talks';
 import Skills from './components/Skills';
 
+const meta = {
+  title: 'Lucas Lencinas',
+  description: 'Lucas Lencinas - Software Engineer. Javascript Enthusiast. React and Node.js developer',
+  canonical: 'https://lucaslencinas.github.io',
+  meta: {
+    'charset': 'utf-8',
+    'name': {
+      keywords: 'lucas,lencinas,react,node,javascript,java,scala,frontend,backend,fullstack,graphql,engineering'
+    },
+    'og:title': 'Lucas Lencinas',
+    'og:type': 'website',
+    'og:image': 'http://lucaslencinas.github.io/diploma.jpg',
+    'og:image:secure_url': 'https://lucaslencinas.github.io/diploma.jpg',
+    'og:url': 'https://lucaslencinas.github.io',
+    'og:description': 'Lucas Lencinas - Software Engineer. Javascript Enthusiast. React and Node.js developer',
+    'og:locale': 'en_US'
+  }
+};
+
 const App = () => (
   <Router>
-    <div className="app">
-      <Navbar />
-      <div className="content">
-        <Route
-          exact path="/"
-          component={Home}
-        />
-        <Route
-          path="/about"
-          component={About}
-        />
-        <Route
-          path="/skills"
-          component={Skills}
-        />
-        <Route
-          path="/projects"
-          component={Projects}
-        />
-        <Route
-          path="/articles"
-          component={Articles}
-        />
-        <Route
-          path="/talks"
-          component={Talks}
-        />
+    <DocumentMeta {...meta}>
+      <div className="app">
+        <Navbar />
+        <div className="content">
+          <Route
+            exact path="/"
+            component={Home}
+          />
+          <Route
+            path="/about"
+            component={About}
+          />
+          <Route
+            path="/skills"
+            component={Skills}
+          />
+          <Route
+            path="/projects"
+            component={Projects}
+          />
+          <Route
+            path="/articles"
+            component={Articles}
+          />
+          <Route
+            path="/talks"
+            component={Talks}
+          />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </DocumentMeta>
   </Router>
 );
 
 export default App;
-
-// Color azul ==>  rgba(26, 150, 255, 0.75)
-// Background => rgba(30, 30, 30, 1)
-
-// rgba(200, 200, 200, 1)
-
-// onhover
-// color rgba(60, 60, 60, 1)
-// background rgba(145, 175, 215, 1)
 
 /*
     black:        rgb(0,     0,   0, 1),
