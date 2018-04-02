@@ -1,0 +1,40 @@
+.app {
+  height: 100%;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding: 100px 100px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .content {
+    padding: 50px 0px;
+  }
+
+  .app {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .content {
+    padding: 50px 0px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1599px) {
+  .content {
+    padding: 50px 200px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 2299px) {
+  .content {
+    padding: 50px 300px;
+  }
+}

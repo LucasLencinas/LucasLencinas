@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .item {
+  padding: 10px;
+}
+
+.footer svg:hover * {
+  fill: rgba(26, 150, 255, 0.75);
+}
+
+.footer .link {
+   display: flex;
+ }
+
+.footer a:hover {
+  color: red;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 0;
+  }
+}

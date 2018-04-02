@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  color: rgba(26, 150, 255, 0.75);
+}
+
+.navbar .item {
+  margin: 10px;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: rgba(145, 175, 215, 1);
+  color: rgba(60, 60, 60, 1);
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .navbar .item {
+    margin: 0px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 479px) {
+  .home {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 991px) {
+  .home {
+    padding: 0 100px;
+  }
+}
