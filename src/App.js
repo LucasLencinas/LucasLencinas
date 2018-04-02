@@ -16,17 +16,22 @@ const meta = {
   description: 'Lucas Lencinas - Software Engineer. Javascript Enthusiast. React and Node.js developer',
   canonical: 'https://lucaslencinas.github.io',
   meta: {
-    'charset': 'utf-8',
-    'name': {
+    charset: 'utf-8',
+    name: {
       keywords: 'lucas,lencinas,react,node,javascript,java,scala,frontend,backend,fullstack,graphql,engineering'
     },
-    'og:title': 'Lucas Lencinas',
-    'og:type': 'website',
-    'og:image': 'http://lucaslencinas.github.io/diploma.jpg',
-    'og:image:secure_url': 'https://lucaslencinas.github.io/diploma.jpg',
-    'og:url': 'https://lucaslencinas.github.io',
-    'og:description': 'Lucas Lencinas - Software Engineer. Javascript Enthusiast. React and Node.js developer',
-    'og:locale': 'en_US'
+    property: {
+      'og:title': 'Lucas Lencinas',
+      'og:type': 'website',
+      'og:image': 'http://lucaslencinas.github.io/diploma.jpg',
+      'og:image:secure_url': 'https://lucaslencinas.github.io/diploma.jpg',
+      'og:url': 'https://lucaslencinas.github.io',
+      'og:description': 'Lucas Lencinas - Software Engineer. Javascript Enthusiast. React and Node.js developer',
+      'og:locale': 'en_US'
+    }
+  },
+  auto: {
+    ograph: true
   }
 };
 
