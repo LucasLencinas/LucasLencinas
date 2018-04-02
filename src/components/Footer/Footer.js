@@ -13,11 +13,6 @@ const mail = 'lllencinas@gmail.com';
 const Footer = () => (
   <div className="footer">
     <div className="item">
-      <a className="link" href={twitter} target="_blank">
-        <Twitter />
-      </a>
-    </div>
-    <div className="item">
       <a href={linkedin} target="_blank">
         <Linkedin />
       </a>
@@ -25,6 +20,11 @@ const Footer = () => (
     <div className="item">
       <a href={github} target="_blank">
         <Github />
+      </a>
+    </div>
+    <div className="item">
+      <a href={twitter} target="_blank">
+        <Twitter />
       </a>
     </div>
     <div className="item">

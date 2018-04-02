@@ -1,2 +1,4 @@
-.projects {
+.projects a:hover {
+  background-color: rgba(145, 175, 215, 1);
+  color: rgba(60, 60, 60, 1);
 }

@@ -4,7 +4,7 @@ import './Home.css';
 const Home = () => (
   <div className="home">
     <div className="text">
-      <h2># Lucas Lencinas</h2>
+      <h2>## Lucas Lencinas</h2>
       <p>Software Engineer, Football Player & Javascript Enthusiast</p>
     </div>
     <div className="image">
