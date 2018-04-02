@@ -38,38 +38,37 @@ const meta = {
 
 const App = () => (
   <Router>
-    <DocumentMeta {...meta}>
-      <div className="app">
-        <Navbar />
-        <div className="content">
-          <Route
-            exact path="/"
-            component={Home}
-          />
-          <Route
-            path="/about"
-            component={About}
-          />
-          <Route
-            path="/skills"
-            component={Skills}
-          />
-          <Route
-            path="/projects"
-            component={Projects}
-          />
-          <Route
-            path="/articles"
-            component={Articles}
-          />
-          <Route
-            path="/talks"
-            component={Talks}
-          />
-        </div>
-        <Footer />
+    <div className="app">
+      <DocumentMeta {...meta} />
+      <Navbar />
+      <div className="content">
+        <Route
+          exact path="/"
+          component={Home}
+        />
+        <Route
+          path="/about"
+          component={About}
+        />
+        <Route
+          path="/skills"
+          component={Skills}
+        />
+        <Route
+          path="/projects"
+          component={Projects}
+        />
+        <Route
+          path="/articles"
+          component={Articles}
+        />
+        <Route
+          path="/talks"
+          component={Talks}
+        />
       </div>
-    </DocumentMeta>
+      <Footer />
+    </div>
   </Router>
 );
 
