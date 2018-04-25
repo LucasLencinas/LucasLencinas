@@ -10,6 +10,7 @@ import Projects from './components/Projects';
 import Articles from './components/Articles';
 import Talks from './components/Talks';
 import Skills from './components/Skills';
+import withTracker from './withTracker';
 
 const meta = {
   title: 'Lucas Lencinas',
@@ -44,27 +45,27 @@ const App = () => (
       <div className="content">
         <Route
           exact path="/"
-          component={Home}
+          component={withTracker(Home)}
         />
         <Route
           path="/about"
-          component={About}
+          component={withTracker(About)}
         />
         <Route
           path="/skills"
-          component={Skills}
+          component={withTracker(Skills)}
         />
         <Route
           path="/projects"
-          component={Projects}
+          component={withTracker(Projects)}
         />
         <Route
           path="/articles"
-          component={Articles}
+          component={withTracker(Articles)}
         />
         <Route
           path="/talks"
-          component={Talks}
+          component={withTracker(Talks)}
         />
       </div>
       <Footer />
